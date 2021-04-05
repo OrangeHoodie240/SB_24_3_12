@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="styles.css") }}' />
+    <title>Cupcakes</title>
+</head>
+
+<body>
+    <h1>Cupcakes</h1>
+    <section>
+        <ul id='list'></ul>
+
+        <form id='cupcake-form'>
+            <div id='form-div'>
+
+                <label for='flavor'>Flavor: </label>
+                <input type='text' name='flavor' id='flavor' required />
+
+                <label for='rating'>Rating: </label>
+                <input type='text' name='rating' id='rating' required />
+
+                <label for='size'>:Size </label>
+                <input type='text' name='size' id='size' required />
+
+                <label for='image'>Image URL: </label>
+                <input type='text' name='image' id='image' />
+
+                <button>Submit</button>
+            </div>
+        </form>
+
+
+    </section>
+
+    <script type='text/javascript' src='{{ url_for("static", filename="script.js") }}'></script>
+</body>
+
+</html>
